@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './Components/Header';
+import Liveclock from './Projects/LiveClock/Liveclock'
+import { Grid, Container } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid container>
+      <Grid item xs={12}>
+        <Header />
+      </Grid>
+      <Container maxWidth='mb'>
+        <Grid item xs={12}>
+          <Liveclock />
+        </Grid>
+      </Container>
+    </Grid>
   );
 }
 
