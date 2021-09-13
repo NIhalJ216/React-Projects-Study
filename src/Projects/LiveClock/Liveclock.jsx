@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Typography } from '@material-ui/core';
 
 function Liveclock() {
 
@@ -13,8 +14,7 @@ function Liveclock() {
     //<button className="lbutton" onClick={UpdateTime}>get time</button>
     return (
         <div>
-            <h1>{ctime}</h1>
-
+            <Typography variant='h1' align='center'>{ctime}</Typography>
         </div>
     )
 }

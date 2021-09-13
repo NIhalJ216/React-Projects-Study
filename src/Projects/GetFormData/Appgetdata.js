@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './Components/Header';
 import { Grid, Container, TextField, Typography, Button, FormControl, InputLabel, Select, MenuItem } from '@material-ui/core';
 
-class App extends Component {
+class Appgetdata extends Component {
   state = {
     firstName: '',
     LastName: '',
@@ -161,4 +161,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Appgetdata;

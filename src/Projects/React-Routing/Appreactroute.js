@@ -1,10 +1,9 @@
 import React from 'react';
-import './App.css';
 import { Link, useHistory } from "react-router-dom";
 import ROUTES, { RenderRoutes } from "./Components/Routes";
 import { Grid, Container, Typography, Button } from '@material-ui/core';
 
-function App() {
+function Appreactroute() {
   //   const history = useHistory();
 
   //   function logout() {
@@ -23,7 +22,7 @@ function App() {
     </Grid>
   );
 }
-export default App;
+export default Appreactroute;
 
 /**
  * Render a nested hierarchy of route configs with unknown depth/breadth

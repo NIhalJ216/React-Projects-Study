@@ -1,4 +1,3 @@
-import './App.css';
 import Header from './Components/Header';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';

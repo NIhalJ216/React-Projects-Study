@@ -1,13 +1,12 @@
 import React from 'react';
-import './App.css';
 import Header from './Components/Header';
 import Content from './Components/Content';
 import { Typography, Grid } from '@material-ui/core';
 
-function App() {
+function Appgrid() {
   return (
     <Grid container direction="column">
-      <Grid item>
+      <Grid item xs={12}>
         <Header />
       </Grid>
       <Grid item container>
@@ -21,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Appgrid;

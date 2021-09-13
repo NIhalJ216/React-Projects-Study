@@ -1,16 +1,15 @@
 import React from 'react';
-import './App.css';
 import PostForm from './components/PostForm';
 import PostList from './components/PostList';
 
-function App() {
+function Apphttp() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <h1>check Data in console</h1>
       <PostForm />
       {/* <PostList /> */}
     </div>
   );
 }
 
-export default App;
+export default Apphttp;

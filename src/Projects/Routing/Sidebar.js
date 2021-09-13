@@ -4,21 +4,22 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { Drawer as MUIDrawer, List, ListItem, ListItemIcon, ListItemText, } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 import { withRouter } from 'react-router-dom';
-import ROUTES, { RenderRoutes } from "./Components/Routes";
+import ROUTES, { RenderRoutes } from "./Routes";
 import { Link } from "react-router-dom";
 
 
 
-const useStyles = makeStyles({
-    drawer: {
-        width: 150,
-        marginTop: 87,
-    }
-});
+// const useStyles = makeStyles({
+//     drawer: {
+//         width: 150,
+//         marginTop: 64,
+//     }
+// });
+// className={classes.drawer}
 
 const Drawer = props => {
     // const { history } = props;
-    const classes = useStyles();
+    // const classes = useStyles();
     // const itemlist = [
     //     {
     //         text: 'Home',
@@ -34,7 +35,7 @@ const Drawer = props => {
 
 
     return (
-        <div className={classes.drawer}>
+        <div >
             <MUIDrawer variant="permanent" >
                 <List>
                     {displayRouteMenu(ROUTES)}
