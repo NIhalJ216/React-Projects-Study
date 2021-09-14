@@ -39,14 +39,11 @@ export default function Drawer() {
                     </Box>
                     <Divider />
                     <List>
-                        <ListItem button onClick={() => history.push('/approuting')}>
-                            <ListItemText primary={'Routing'} />
+                        <ListItem button onClick={() => history.push('/appreactroute')}>
+                            <ListItemText primary={'React-Routing'} />
                         </ListItem>
                         <ListItem button onClick={() => history.push('/liveclock')}>
                             <ListItemText primary={'LiveClock'} />
-                        </ListItem>
-                        <ListItem button onClick={() => history.push('/appreactroute')}>
-                            <ListItemText primary={'React-Routing'} />
                         </ListItem>
                         <ListItem button onClick={() => history.push('/appredux')}>
                             <ListItemText primary={'ReduxStore'} />
@@ -54,18 +51,19 @@ export default function Drawer() {
                         <ListItem button onClick={() => history.push('/apphooks')}>
                             <ListItemText primary={'React-Hooks'} />
                         </ListItem>
-                        <ListItem button onClick={() => history.push('/apphttp')}>
-                            <ListItemText primary={'Http API Responces'} />
-                        </ListItem>
                         <ListItem button onClick={() => history.push('/appgrid')}>
                             <ListItemText primary={'Grid layout'} />
                         </ListItem>
-                        <ListItem button onClick={() => history.push('/appgetdata')}>
-                            <ListItemText primary={'GetForm Data'} />
+                        <ListItem button onClick={() => history.push('/apphttp')}>
+                            <ListItemText primary={'Http API Responces'} />
                         </ListItem>
                         <ListItem button onClick={() => history.push('/appformik')}>
                             <ListItemText primary={'Form with Formik'} />
                         </ListItem>
+                        <ListItem button onClick={() => history.push('/appgetdata')}>
+                            <ListItemText primary={'GetForm Data'} />
+                        </ListItem>
+
                     </List>
                 </Grid>
             </SwipeableDrawer>

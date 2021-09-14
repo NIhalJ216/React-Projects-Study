@@ -6,6 +6,7 @@ function Home() {
         <div>
             <Typography variant='h1' align='center'>Welcome to HomePage</Typography>
         </div>
+
     )
 }
 

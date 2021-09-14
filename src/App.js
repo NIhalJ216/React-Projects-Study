@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Header from './Components/Header';
 import Liveclock from './Projects/LiveClock/Liveclock';
-import Approuting from './Projects/Routing/Approuting';
 import Appreactroute from './Projects/React-Routing/Appreactroute';
 import Appredux from './Projects/React Redux/Appredux';
 import Apphooks from './Projects/React Hooks useState/Apphooks';
@@ -15,7 +14,7 @@ import { makeStyles } from '@material-ui/styles';
 import {
   BrowserRouter as Router, Switch, Route, Link
 } from "react-router-dom";
-import Home from '@material-ui/icons/Home';
+import Home from './Components/Home';
 
 function App() {
   return (
@@ -27,14 +26,11 @@ function App() {
         <Container maxWidth='mb'>
           <Switch>
             <Grid item xs={12}>
-              {/*<Route path="/">
+              <Route exact path="/">
                 <Home />
-              </Route>*/}
+              </Route>
               <Route path="/liveclock">
                 <Liveclock />
-              </Route>
-              <Route path="/approuting">
-                <Approuting />
               </Route>
               <Route path="/appreactroute">
                 <Appreactroute />
