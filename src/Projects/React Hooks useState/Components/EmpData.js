@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FormControl, InputLabel, Input, RadioGroup, FormControlLabel, FormLabel, Radio, TextareaAutosize, Button, Grid } from '@material-ui/core';
+import { FormControl, TextField, RadioGroup, FormControlLabel, FormLabel, Radio, Button, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
 // const useStyles = makeStyles({
@@ -51,15 +51,12 @@ class EmpData extends Component {
         // const classes = useStyles();
         const { name, gender, position, address } = this.state
         return (
-            <div>
+            <Grid container direction='column' alignItems='center'>
                 <form onSubmit={this.handleSubmit}>
-                    <div>
-                        <FormControl>
-                            <InputLabel>Name</InputLabel>
-                            <Input type="text" value={name} onChange={this.handlenamechange} />
-                        </FormControl>
-                    </div>
-                    <div>
+                    <Grid item>
+                        <TextField variant='outlined' label='Name' type="text" size='small' value={name} onChange={this.handlenamechange} />
+                    </Grid>
+                    <Grid item>
                         <FormControl component="fieldset">
                             <FormLabel component="legend">Gender</FormLabel>
                             <RadioGroup aria-label="gender" name="gender1" value={gender} onChange={this.onValueChange}>
@@ -68,28 +65,24 @@ class EmpData extends Component {
                                 <FormControlLabel value="other" control={<Radio />} label="Other" />
                             </RadioGroup>
                         </FormControl>
-                    </div>
+                    </Grid>
 
-                    <div>
-                        <FormControl>
-                            <InputLabel>Position</InputLabel>
-                            <Input type="text" value={position} onChange={this.handlepositionchange} />
-                        </FormControl>
-                    </div>
+                    <Grid item>
+                        <TextField variant='outlined' label='Position' type="text" size='small' value={position} onChange={this.handlepositionchange} />
+                    </Grid>
 
-                    <div>
-                        <FormControl>
-                            <InputLabel>Address</InputLabel>
-                            <TextareaAutosize minRows={3} value={address} onChange={this.handleaddresschange} />
-                        </FormControl>
-                    </div>
+                    <Grid item>
+                        <TextField variant='outlined' label="Address"
+                            multiline
+                            rows={4} size='small' value={address} onChange={this.handleaddresschange} />
+                    </Grid>
 
                     <div>
                         <Button variant="contained" color="primary" type="submit">Submit</Button>
                     </div>
 
                 </form>
-            </div>
+            </Grid>
         )
     }
 }

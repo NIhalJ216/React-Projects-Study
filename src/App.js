@@ -38,7 +38,7 @@ function App() {
               <Route path="/appredux">
                 <Appredux />
               </Route>
-              <Route path="/apphooks">
+              <Route exact path="/apphooks">
                 <Apphooks />
               </Route>
               <Route path="/apphttp">

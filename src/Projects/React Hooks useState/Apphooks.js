@@ -1,26 +1,19 @@
 import React from 'react';
-// import Greet from './Components/Greet';
-// import Message from './Components/Message';
-// import Welcome from './Components/Welcome';
-// import ClassCounter from './Components/ClassCounter';
-// import HooksCounter from './Components/HooksCounter';
-// import HookCounterTwo from './Components/HookCounterTwo';
-import HookCounterThree from './Components/HookCounterThree';
-// import EmpData from './Components/EmpData';
+import Homehook from './Homehook';
+import { Grid, Typography } from '@material-ui/core'
 
 function Apphooks() {
   return (
-    <div className="App">
-      <h1>Employee Data</h1>
-      {/*<Greet />*/}
-      {/*<Message />*/}
-      {/*<Welcome />*/}
-      {/*<HooksCounter />*/}
-      {/*<HookCounterTwo />*/}
-      <HookCounterThree />
-      {/*<ClassCounter />*/}
-      {/*<EmpData />*/}
-    </div>
+    <Grid container>
+      <Grid item xs={3}>
+        <Homehook />
+      </Grid>
+      <Grid item xs={9} style={{ marginTop: '20px' }}>
+        <Typography variant='h5'>
+          All hooks learned from: https://youtu.be/LlvBzyy-558
+        </Typography>
+      </Grid>
+    </Grid>
   );
 }
 
