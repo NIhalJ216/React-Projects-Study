@@ -9,6 +9,7 @@ import Apphttp from './Projects/HTTP Responces get post/Apphttp';
 import Appgrid from './Projects/Grid Layout/Appgrid';
 import Appgetdata from './Projects/GetFormData/Appgetdata';
 import Appformikvalid from './Projects/Formik validation form/Appformikvalid';
+import Appregex from './Projects/Regex/Appregex';
 import { Grid, Container, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import {
@@ -52,6 +53,9 @@ function App() {
               </Route>
               <Route path="/appformik">
                 <Appformikvalid />
+              </Route>
+              <Route path="/appregex">
+                <Appregex />
               </Route>
 
             </Grid>

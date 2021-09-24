@@ -24,14 +24,14 @@ function Homehook() {
 
     return (
         <Grid container style={{ display: "flex", height: "100vh", alignItems: "stretch" }}>
-            <Grid item xs={7} style={{ backgroundColor: "#ffffff", border: '1px solid black' }}>
+            <Grid item xs={7} style={{ border: '1px solid black' }}>
                 <Hookroutes />
                 <Button variant="contained" style={{ marginLeft: '20px' }} color="primary" onClick={Home}>Home</Button>
             </Grid>
             <Grid item xs={5} style={{ padding: '20px' }}>
                 <Router>
                     <Switch>
-                        <Route exact path="/apphooks/usestate">
+                        <Route path="/apphooks/usestate">
                             <Usestate />
                         </Route>
                         <Route path="/apphooks/usereducer">

@@ -63,6 +63,9 @@ export default function Drawer() {
                         <ListItem button onClick={() => history.push('/appgetdata')}>
                             <ListItemText primary={'GetForm Data'} />
                         </ListItem>
+                        <ListItem button onClick={() => history.push('/appregex')}>
+                            <ListItemText primary={'Regex Validations'} />
+                        </ListItem>
 
                     </List>
                 </Grid>

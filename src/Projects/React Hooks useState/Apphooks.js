@@ -1,6 +1,10 @@
 import React from 'react';
 import Homehook from './Homehook';
+import Homeapphook from './Components/Homeapphook';
 import { Grid, Typography } from '@material-ui/core'
+import {
+  BrowserRouter as Router, Switch, Route, Link
+} from "react-router-dom";
 
 function Apphooks() {
   return (
@@ -9,9 +13,13 @@ function Apphooks() {
         <Homehook />
       </Grid>
       <Grid item xs={9} style={{ marginTop: '20px' }}>
-        <Typography variant='h5'>
-          All hooks learned from: https://youtu.be/LlvBzyy-558
-        </Typography>
+        <Router>
+          <Switch>
+            <Route exact path='/apphooks/homeapphook'>
+              <Homeapphook />
+            </Route>
+          </Switch>
+        </Router>
       </Grid>
     </Grid>
   );
