@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Grid, Box, SwipeableDrawer, List, Divider, ListItem, ListItemText, IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/core/styles';
-
 import {
     BrowserRouter as Router, Switch, Route, Link, useHistory
 } from "react-router-dom";

@@ -15,7 +15,7 @@ function Apphooks() {
       <Grid item xs={9} style={{ marginTop: '20px' }}>
         <Router>
           <Switch>
-            <Route exact path='/apphooks/homeapphook'>
+            <Route path='/apphooks/homeapphook'>
               <Homeapphook />
             </Route>
           </Switch>

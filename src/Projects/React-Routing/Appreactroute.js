@@ -2,22 +2,33 @@ import React from 'react';
 import { Link, useHistory } from "react-router-dom";
 import ROUTES, { RenderRoutes } from "./Components/Routes";
 import { Grid, Container, Typography, Button } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles'
+
+const useStyles = makeStyles({
+  typography: {
+    marginTop: 30,
+  }
+});
 
 function Appreactroute() {
+  const classes = useStyles()
   //   const history = useHistory();
 
   //   function logout() {
   //     localStorage.removeItem("user");
   //     history.push("/");
   //   }
+
+
   return (
-    <Grid container style={{ display: "flex", height: "100vh", alignItems: "stretch" }}>
-      <Grid item xs={2} style={{ backgroundColor: "#ffffff", border: '1px solid black' }}>
-        {displayRouteMenu(ROUTES)}
+    <Grid container>
+      <Grid item xs={12}>
+        <Typography variant='h5' className={classes.typography}>Implemented in Project</Typography>
+        {/*displayRouteMenu(ROUTES)*/}
         {/*<Button variant="contained" color="primary" onClick={logout}>Log Out</Button>*/}
       </Grid>
-      <Grid item xs={10} style={{ padding: '20px' }}>
-        <RenderRoutes routes={ROUTES} />
+      <Grid item style={{ padding: '20px' }}>
+        {/*<RenderRoutes routes={ROUTES} />*/}
       </Grid>
     </Grid>
   );

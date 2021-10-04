@@ -10,7 +10,6 @@ const useStyles = makeStyles(() => ({
     typostyle: {
         flex: 1,
         fontSize: 18,
-        marginLeft: 10,
     }
 }));
 
@@ -20,7 +19,7 @@ function Header() {
         <AppBar position="static">
             <Toolbar>
                 <Drawer />
-                <Link to='/'><img src={ReactLogo} width='180' height='50' /></Link>
+                <Link to='/'><img src={ReactLogo} width='70' height='50' /></Link>
                 <Typography className={classes.typostyle}>React Project</Typography>
             </Toolbar>
         </AppBar>

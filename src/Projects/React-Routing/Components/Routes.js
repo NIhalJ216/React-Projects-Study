@@ -23,7 +23,7 @@ const ROUTES = [
         // },
         routes: [
             {
-                path: "/app",
+                path: "/app/root",
                 key: "APP_ROOT",
                 exact: true,
                 component: () => <h1>App Index</h1>,

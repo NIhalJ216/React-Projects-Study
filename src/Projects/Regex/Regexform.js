@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Typography, TextField, Container } from '@material-ui/core'
+import { Grid, TextField, Container } from '@material-ui/core'
 
 class Regexform extends Component {
     state = {
